@@ -6,4 +6,4 @@ class Personage:
         return self.hp
 
     def attaquer(self, defenseur):
-        defenseur.hp = 9
+        defenseur.hp -= 1

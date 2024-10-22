@@ -14,6 +14,13 @@ class MyTestCase(unittest.TestCase):
         attaquant.attaquer(defenseur)
         self.assertEqual(9, defenseur.get_hp())
 
+    def test_attaquer_enleve_2_hp(self):
+        attaquant = Personage()
+        defenseur = Personage()
+        attaquant.attaquer(defenseur)
+        attaquant.attaquer(defenseur)
+        self.assertEqual(8, defenseur.get_hp())
+
 
 if __name__ == '__main__':
     unittest.main()
