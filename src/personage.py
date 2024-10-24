@@ -15,3 +15,8 @@ class Personage:
 
     def est_vivant(self):
         return not self.est_mort
+
+    def resurrection(self):
+        if self.est_mort == True:
+            self.hp = 1
+            self.est_mort = False

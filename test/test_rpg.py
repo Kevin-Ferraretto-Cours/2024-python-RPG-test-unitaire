@@ -38,7 +38,7 @@ class MyTest_Case(unittest.TestCase):
         self.assertEqual(0, defenseur.get_hp())  
 
     def test_resurrection_personnage(self):
-        attaquant = Personnage()
+        attaquant = Personage()
         defenseur = Personage()
         for _ in range(10):
             attaquant.attaquer(defenseur)
@@ -57,6 +57,6 @@ class MyTest_Case(unittest.TestCase):
         attaquant.attaquer(defenseur)
         defenseur.resurrection()
         self.assertEqual(9, defenseur.get_hp())
-        
+
 if __name__ == '__main__':
     unittest.main()
